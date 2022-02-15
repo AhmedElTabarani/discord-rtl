@@ -206,11 +206,18 @@
 }
 
 /* الصورة الشخصية في صفحة الإعدادات */
-.avatar-3mTjvZ {
+.avatar-3mTjvZ,
+.avatarUploader-qEFQS2 {
   right: 16px !important;
   left: auto !important;
   direction: ltr !important;
 }
+
+.fakeActivityIcon-KeXVoI {
+  margin-left: 16px !important;
+  margin-right: 0 !important;
+}
+
 /* الازرار */
 .disableButton-3BR0Vj {
   margin-left: 16px !important;
@@ -240,7 +247,14 @@
 .cardText-1KLO-g {
   padding-right: 8px !important;
 }
-
+/* الشريط */
+.bar-1Bhnl9 {
+  direction: ltr !important;
+}
+/* الخيارات */
+.option-2eIyOn {
+  direction: rtl !important;
+}
 /* إعدادات الوصول */
 .labelForward-2yqkcf {
   padding-right: 8px !important;

@@ -110,13 +110,31 @@
   left: 10px !important;
   right: 0px !important;
   direction: rtl !important;
+  text-align: start !important;
 }
-
+.textAreaWithoutAttachmentButton-1as0NS {
+  padding-right: 16px !important;
+  padding-left: 0 !important;
+}
 .textArea-2CLwUE {
   text-align: right !important;
 }
 .fontSize16Padding-XoMpjI {
   text-align: right !important;
+}
+
+.channelTextArea-1VQBuV .buttons-uaqb-5 {
+  flex-direction: row-reverse !important;
+}
+
+.characterCount-8yNPfb {
+  left: 14px !important;
+  right: auto !important;
+}
+
+.bioTextArea-dDGOeC .buttons-uaqb-5 {
+  margin-left: -6px !important;
+  margin-right: 0 !important;
 }
 /* الايقونات في شريطة المحادثة */
 .attachButton-1ijpt9 {
@@ -134,6 +152,6 @@
 }
 
 /* البحث عن الرسائل */
-.scroller-3iiyhZ{
+.scroller-3iiyhZ {
   direction: rtl !important;
 }
