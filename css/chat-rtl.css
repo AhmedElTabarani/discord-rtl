@@ -1,0 +1,139 @@
+/* المحادثة */
+.scroller-kQBbkU {
+  direction: rtl !important;
+}
+
+/* تعديل النص الذي في المحادثة */
+.cozy-VmLDNB .contents-2MsGLg {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.cozy-VmLDNB .markupRtl-1iLc5Y {
+  text-align: right !important;
+}
+/* محاذاه الكلام لليمين */
+.cozy-VmLDNB .messageContent-2t3eCI {
+  margin-right: -72px !important;
+  margin-left: 0 !important;
+  padding-right: 72px !important;
+  padding-left: 0 !important;
+}
+
+.cozy-VmLDNB.wrapper-30-Nkg {
+  padding-right: 72px !important;
+}
+
+/* الصورة الشخصية المصغرة في المحادثة */
+.avatar-2e8lTP {
+  right: 16px !important;
+  left: 0 !important;
+}
+
+/* إسم المستخدم في المحادثة */
+.compact-2Nkcau .headerText-2z4IhQ,
+.cozy-VmLDNB .headerText-2z4IhQ {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+/* وقت ارسال الرسالة الذي بجانب الاسم*/
+.timestampInline-_lS3aK {
+  margin-right: 0.25rem !important;
+  margin-left: 0 !important;
+}
+/* وقت ارسال الرسائل المنفردة */
+.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+  right: 0 !important;
+  left: auto !important;
+  text-align: left !important;
+}
+/* الصورة المصغرة اثناء الرد على رسالة */
+.executedCommandAvatar-3oOnb1,
+.replyAvatar-sHd2sU,
+.replyBadge-LMm_Ic,
+.threadMessageAccessoryAvatar-17qE_g {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+/* الرسالة المصغرة التى تم الرد عليها */
+.executedCommand-14-SNW .applicationName-19i3lP,
+.executedCommand-14-SNW .commandName-1KhvGm,
+.executedCommand-14-SNW .username-h_Y3Us,
+.repliedMessage-3Z6XBG .username-h_Y3Us,
+.threadMessageAccessory-2W9mjC .username-h_Y3Us {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+/* علامة الرد على رسالة احدهم */
+.repliedMessage-3Z6XBG:before {
+  left: 100% !important;
+  right: calc(var(--avatar-size) / 2 * -1 + var(--gutter) * -1) !important;
+  margin-left: var(--reply-spacing) !important;
+  margin-right: calc(var(--spine-width) * -1 / 2) !important;
+  border-right: var(--spine-width) solid var(--background-accent) !important;
+  border-left: 0 solid var(--background-accent) !important;
+  border-top-right-radius: 6px !important;
+  border-top-left-radius: 0 !important;
+}
+.automodMessage-265YwJ:before,
+.ephemeral-2nDdnn:before,
+.mentioned-Tre-dv:before,
+.replying-eZ7p5z:before {
+  right: 0 !important;
+  left: auto !important;
+}
+
+/* اعدادات المحادثة */
+.buttonContainer-1502pf {
+  left: 0 !important;
+  right: auto !important;
+}
+
+.container-2gUZhU {
+  left: 0 !important;
+  right: auto !important;
+  padding: 0 32px 0 14px !important;
+}
+
+/* شريط كتابة الرسالة */
+.inner-NQg18Y {
+  flex-direction: row-reverse !important;
+}
+.placeholder-1_mJY1,
+.slateTextArea-27tjG0 {
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+  left: 10px !important;
+  right: 0px !important;
+  direction: rtl !important;
+}
+
+.textArea-2CLwUE {
+  text-align: right !important;
+}
+.fontSize16Padding-XoMpjI {
+  text-align: right !important;
+}
+/* الايقونات في شريطة المحادثة */
+.attachButton-1ijpt9 {
+  margin-right: -16px !important;
+  margin-left: 0 !important;
+}
+
+.sansAttachButton-1ERHue {
+  padding-right: 16px !important;
+  padding-left: 0 !important;
+}
+
+.scrollableContainer-15eg7h {
+  overflow-y: hidden !important;
+}
+
+/* البحث عن الرسائل */
+.scroller-3iiyhZ{
+  direction: rtl !important;
+}

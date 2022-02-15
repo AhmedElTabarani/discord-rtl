@@ -1,0 +1,304 @@
+/* تغير اتجاه الواجهه */
+.content-1SgpWY,
+.container-1eFtFS {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+/* الشريط الابيض بجانب ايقونات القنوات */
+/* وإشعار عد قراءة المحادثة */
+.pill-L_aLMQ,
+.pill-2RsI5Q,
+.unread-36eUEm {
+  left: auto !important;
+  right: 0 !important;
+  transform: scaleX(-1) !important;
+}
+
+/* شريط الأصدقاء */
+.scroller-WSmht3 {
+  direction: rtl !important;
+}
+
+.channel-1Shao0 {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+.linkButton-2NshQj {
+  padding-right: 8px !important;
+  padding-left: 0 !important;
+}
+
+/* صور الأصدقاء الشخصية */
+.avatar-1HDIsL {
+  margin-left: 12px !important;
+  margin-right: 0 !important;
+}
+
+/* العنوانين في شريط الأصدقاء */
+.privateChannelsHeaderContainer-1UWASm {
+  padding: 18px 18px 4px 8px !important;
+}
+
+/* شريط بيانات المستخدم */
+.container-YkUktl,
+.container-YkUktl .flex-3BkGQD {
+  flex-direction: row-reverse !important;
+}
+
+/* الصورة الشخصية */
+.avatarWrapper-1B9FTW {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+/* إسم المستخدم */
+.nameTag-sc-gpq {
+  margin-left: 4px !important;
+  margin-right: 0 !important;
+  direction: rtl !important;
+}
+/* شريط اعضاء القناه */
+.content-1jQy2l {
+  flex-direction: row-reverse !important;
+}
+
+.container-2o3qEW,
+.membersWrap-3NUR2t {
+  direction: rtl !important;
+}
+
+/* عناوين شريط الأعضاء */
+.membersGroup-2eiWxl {
+  padding: 24px 16px 0 8px !important;
+}
+/* شريط كل عضو */
+.member-2gU6Ar {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+/* صور الأعضاء الشخصية */
+.avatar-6qzftW {
+  margin-left: 12px !important;
+  margin-right: 0 !important;
+  direction: ltr !important;
+}
+
+/* تاغ البوت */
+.botTag-2mryIa {
+  margin-right: 4px !important;
+  margin-left: 0 !important;
+}
+
+/* أسماء الأعضاء */
+.name-3Vmqxm {
+  direction: ltr !important;
+}
+
+/* شريط المحادثة العلوى*/
+.container-ZMc96U,
+.children-3xh0VB,
+.title-17SveM,
+.toolbar-3_r2xA {
+  flex-direction: row-reverse !important;
+}
+
+/* إسم المحادثة في الشريط العلوى */
+.title-17SveM {
+  margin: 0 0 0 8px !important;
+}
+
+/* إسم القناه */
+.header-3OsQeK {
+  flex-direction: row-reverse !important;
+}
+
+/* ايقونة بوست السيرفر */
+.guildIconContainer-3QvE6w {
+  margin-left: 4px !important;
+  margin-right: 0 !important;
+}
+
+/* إسم القناه */
+.name-3Uvkvr {
+  direction: rtl !important;
+}
+
+/* شريط المحادثات */
+.scroller-1ox3I2 {
+  direction: rtl !important;
+}
+
+/* ايقونة المحادثة */
+.iconContainer-21RCa3 {
+  margin-left: 6px !important;
+  margin-right: 0 !important;
+}
+
+/* شريط الاعدادات العلوى */
+.topPill-3DJJNV {
+  flex-direction: row-reverse !important;
+}
+
+/* قائمة الأصدقاء في الصفحة الرئيسة */
+.tabBody-2dgbAs {
+  flex-direction: row-reverse !important;
+}
+
+.peopleColumn-1wMU14,
+.peopleList-2VBrVI {
+  direction: rtl !important;
+}
+
+.peopleListItem-u6dGxF {
+  margin-left: 20px !important;
+  margin-right: 30px !important;
+}
+
+/* صور الأصدقاء في القائمة */
+.avatar-2MSPKk {
+  margin: 0 0 0 12px !important;
+}
+
+/* ازرار شريط كل صديق */
+.actions-YHvpIT {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+.actionButton-3-B2x- {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+
+/* شريط الأحداث النشطة */
+.scroller-hE2gWq {
+  border-right: 1px solid var(--background-modifier-accent) !important;
+  border-left: none !important;
+  margin-right: 2px;
+  margin-left: 0 !important;
+  direction: rtl !important;
+}
+
+/* صفحة اعادادات التطبيق */
+.standardSidebarView-E9Pc3j {
+  flex-direction: row-reverse !important;
+}
+
+/* شريط قوائم الاعدادات */
+.sidebarRegionScroller-FXiQOh {
+  direction: rtl !important;
+}
+
+.sidebar-nqHbhN {
+  padding: 60px 20px 60px 6px !important;
+}
+
+/* صفحة الإعدادات الرئيسة */
+.contentRegionShownSidebar-fHXkEg {
+  direction: rtl !important;
+}
+
+/* المعلومات الشخصية */
+.userInfo-regn9W {
+  padding: 16px 120px 0 16px !important;
+}
+
+/* الصورة الشخصية في صفحة الإعدادات */
+.avatar-3mTjvZ {
+  right: 16px !important;
+  left: auto !important;
+  direction: ltr !important;
+}
+/* الازرار */
+.disableButton-3BR0Vj {
+  margin-left: 16px !important;
+  margin-right: 0 !important;
+}
+
+/* شريط لون بعض الإعدادات */
+.radioBar-3w9XY- {
+  border-right: 3px solid var(--radio-bar-accent-color) !important;
+  border-left: none !important;
+}
+/* تطبيقات البوتات */
+.horizontal-112GEH > .flex-2S1XBF {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+
+.horizontal-112GEH > .flexChild-3PzYmX {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+
+/* إعدادات الإشتراكات */
+.cardText-3dmnX6 {
+  padding-right: 8px !important;
+}
+.cardText-1KLO-g {
+  padding-right: 8px !important;
+}
+
+/* إعدادات الوصول */
+.labelForward-2yqkcf {
+  padding-right: 8px !important;
+}
+
+/* إعادادات تطبيقات التواصل الإجتماعي */
+.connectionHeader-Ixbb1s .connectionAccountValue-YkFI6F,
+.connectionAccountLabel-28GEPk {
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+}
+
+/* ازرار ديسكورد نيترو */
+.button-1U79Hu {
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+}
+
+/* ايقونات سبرفر بوست */
+.icon-1Z47rO {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+
+/* إعدادات اللغات */
+.info-2FZci4 {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+/* ايقونة الاعلام */
+.flagImage-jJKVoX {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+/* معلومات التحديث الجديد */
+.modal-3Hrb0S {
+  direction: rtl !important;
+}
+.header-1zd7se {
+  border-radius: 5px 0 0 5px !important;
+}
+
+.content-2hZxGK {
+  border-radius: 5px 0 0 5px !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  direction: rtl !important;
+}
+
+.content-FDHp32 ul {
+  margin: 20px 20px 8px 0 !important;
+}
+
+.content-FDHp32 ul li:before {
+  right: -15px !important;
+  left: 0 !important;
+  margin-right: -3px !important;
+  margin-left: 0 !important;
+}

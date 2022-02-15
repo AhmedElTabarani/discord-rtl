@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Neo Sans Arabic'),
+    url('https://fonts.cdnfonts.com/s/29926/NeoSansArabicMedium.woff')
+      format('woff');
+}
+
+* {
+  font-family: 'Neo Sans Arabic';
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 220px;
+  padding: 1em;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: gainsboro;
+  border-radius: 5px;
+  margin: 7px;
+}
