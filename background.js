@@ -25,8 +25,15 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 chrome.runtime.onMessage.addListener(
-  ({ id, dir, tabId }, sender, sendResponse) => {
-    if (id == 'chat') changeCSS(dir, 'chat-rtl.css', tabId);
-    else if (id == 'ui') changeCSS(dir, 'ui-rtl.css', tabId);
+  async ({ id, dir }, sender, sendResponse) => {
+    const [tab] = await chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    });
+    if (tab.url.includes('https://discord.com/')) {
+      if (id == 'chat') changeCSS(dir, 'chat-rtl.css', tab.id);
+      else if (id == 'ui') changeCSS(dir, 'ui-rtl.css', tab.id);
+    }
   }
 );
+``

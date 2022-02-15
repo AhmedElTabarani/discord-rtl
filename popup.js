@@ -11,22 +11,14 @@ chrome.storage.sync.get('ui', ({ ui }) => {
 });
 
 // save the new value to local storage
-document.getElementById('chat').addEventListener('change', async (e) => {
+document.getElementById('chat').addEventListener('change', (e) => {
   const chat = e.path[0].value;
   chrome.storage.sync.set({ chat });
-  const [tab] = await chrome.tabs.query({
-    active: true,
-    currentWindow: true,
-  });
-  chrome.runtime.sendMessage({ id: 'chat', dir: chat, tabId: tab.id });
+  chrome.runtime.sendMessage({ id: 'chat', dir: chat });
 });
 
-document.getElementById('ui').addEventListener('change', async (e) => {
+document.getElementById('ui').addEventListener('change', (e) => {
   const ui = e.path[0].value;
-  const [tab] = await chrome.tabs.query({
-    active: true,
-    currentWindow: true,
-  });
   chrome.storage.sync.set({ ui });
-  chrome.runtime.sendMessage({ id: 'ui', dir: ui, tabId: tab.id });
+  chrome.runtime.sendMessage({ id: 'ui', dir: ui });
 });
