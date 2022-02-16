@@ -34,6 +34,7 @@
 .avatar-1HDIsL {
   margin-left: 12px !important;
   margin-right: 0 !important;
+  direction: ltr !important;
 }
 
 /* العنوانين في شريط الأصدقاء */
@@ -160,6 +161,12 @@
 /* صور الأصدقاء في القائمة */
 .avatar-2MSPKk {
   margin: 0 0 0 12px !important;
+  direction: ltr !important;
+}
+/* زر قبول او رفض الصديق المقترح */
+.actions-OJh0Kn {
+  margin-right: auto !important;
+  margin-left: 0 !important;
 }
 
 /* ازرار شريط كل صديق */
@@ -238,6 +245,11 @@
 .horizontal-112GEH > .flexChild-3PzYmX {
   margin-right: 10px !important;
   margin-left: 0 !important;
+}
+
+/* أذونات تطبيقات البوتات */
+.permissionCheckmark-ji-OoY {
+  margin-left: 5px; /* حل تحايلي */
 }
 
 /* إعدادات الإشتراكات */
