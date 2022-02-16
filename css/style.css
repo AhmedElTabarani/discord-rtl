@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-ul {
+section {
   width: 220px;
   padding: 1em;
 }
@@ -27,4 +27,10 @@ li {
   background-color: gainsboro;
   border-radius: 5px;
   margin: 7px;
+}
+
+button {
+  padding: 5px;
+  font-size: 24px;
+  width: 100%;
 }
