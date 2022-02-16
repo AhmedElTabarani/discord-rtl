@@ -6,7 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["activeTab", "tabs", "scripting", "storage"],
   "host_permissions": ["https://discord.com/"],
   "action": {
     "default_title": "DiscordRTL",
