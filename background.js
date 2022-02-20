@@ -1,12 +1,12 @@
-const changeCSS = (op, path, tabId) => {
+const changeCSS = async (op, path, tabId) => {
   console.log('ChangeCSS', op, path, tabId);
   if (op == 'RTL')
-    chrome.scripting.insertCSS({
+    await chrome.scripting.insertCSS({
       target: { tabId },
       files: [`css/${path}`],
     });
   else if (op == 'LTR')
-    chrome.scripting.removeCSS({
+    await chrome.scripting.removeCSS({
       target: { tabId },
       files: [`css/${path}`],
     });
@@ -16,39 +16,53 @@ const getCurrentTab = async () => {
   console.log('getCurrentTab');
   const [tab] = await chrome.tabs.query({
     active: true,
-    lastFocusedWindow: true,
+    currentWindow: true,
   });
   return tab;
 };
 
-const loadNewValuesFromStorage = async () => {
-  console.log('loadNewValuesFromStorage');
-  const { chat } = await chrome.storage.sync.get('chat');
-  const { ui } = await chrome.storage.sync.get('ui');
-  return { chat, ui };
+const loadNewValueFromStorage = async (id) => {
+  console.log('loadNewValueFromStorage', id);
+  if (id == 'chat') {
+    const { chat } = await chrome.storage.sync.get('chat');
+    return { value: chat };
+  } else if (id == 'ui') {
+    const { ui } = await chrome.storage.sync.get('ui');
+    return { value: ui };
+  }
 };
 
-const applyNewValuesForDiscord = async (tab) => {
-  console.log('applyNewValuesForDiscord');
+const applyNewValueForDiscord = async (tab, id) => {
+  console.log('applyNewValueForDiscord', id);
   if (!tab.url.includes('https://discord.com/')) return;
-  const { chat, ui } = await loadNewValuesFromStorage();
-  changeCSS(chat, 'chat-rtl.css', tab.id);
-  changeCSS(ui, 'ui-rtl.css', tab.id);
+  if (id == 'chat') {
+    const { value } = await loadNewValueFromStorage(id);
+    await changeCSS(value, 'chat-rtl.css', tab.id);
+  } else if (id == 'ui') {
+    const { value } = await loadNewValueFromStorage(id);
+    await changeCSS(value, 'ui-rtl.css', tab.id);
+  }
 };
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   console.log('onUpdated');
-  if (changeInfo.status == 'loading') await applyNewValuesForDiscord(tab);
+  if (changeInfo.status == 'loading') {
+    await applyNewValueForDiscord(tab, 'chat');
+    await applyNewValueForDiscord(tab, 'ui');
+  }
 });
 
 chrome.tabs.onActivated.addListener(async (activeInfo) => {
   console.log('onActivated');
   const tab = await getCurrentTab();
-  await applyNewValuesForDiscord(tab);
+  await applyNewValueForDiscord(tab, 'chat');
+  await applyNewValueForDiscord(tab, 'ui');
 });
 
-chrome.runtime.onMessage.addListener(async ({ func }, sender, sendResponse) => {
-  console.log('onMessage', func);
-  if (func != 'changeCSS') return;
-  const tab = await getCurrentTab();
-  await applyNewValuesForDiscord(tab);
-});
+chrome.runtime.onMessage.addListener(
+  async ({ func, id }, sender, sendResponse) => {
+    console.log('onMessage', func);
+    if (func != 'changeCSS') return;
+    const tab = await getCurrentTab();
+    await applyNewValueForDiscord(tab, id);
+  }
+);

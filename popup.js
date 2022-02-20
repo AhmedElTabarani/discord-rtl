@@ -14,11 +14,11 @@ chrome.storage.sync.get('ui', ({ ui }) => {
 document.getElementById('chat').addEventListener('change', async (e) => {
   const chat = e.path[0].value;
   await chrome.storage.sync.set({ chat });
-  await chrome.runtime.sendMessage({ func: "changeCSS" });
+  await chrome.runtime.sendMessage({ func: 'changeCSS', id: 'chat' });
 });
 
 document.getElementById('ui').addEventListener('change', async (e) => {
   const ui = e.path[0].value;
   await chrome.storage.sync.set({ ui });
-  await chrome.runtime.sendMessage({ func: "changeCSS" });
+  await chrome.runtime.sendMessage({ func: 'changeCSS', id: 'ui' });
 });
