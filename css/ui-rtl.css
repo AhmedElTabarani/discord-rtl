@@ -143,6 +143,11 @@
   flex-direction: row-reverse !important;
 }
 
+/* وصف المحادثة */
+.topic-11NuQZ {
+  direction: rtl !important;
+}
+
 /* قائمة الأصدقاء في الصفحة الرئيسة */
 .tabBody-2dgbAs {
   flex-direction: row-reverse !important;
